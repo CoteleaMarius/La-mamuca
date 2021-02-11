@@ -1,0 +1,72 @@
+/* other stuff .. */
+.img-container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-container:hover{
+    transform: scale(1.2);
+}
+.store-img{
+    transition: all 1s ease-in-out;
+}
+
+.store-item-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 1s ease-in-out;
+    transform: translate(100%, 100%);
+    border-top-left-radius: 1rem;
+}
+
+.lightbox-container{
+    position: fixed;
+    top:0;   
+    left: 0;
+    height: 100vh;
+   width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.lightbox-holder{
+position: relative;
+}
+
+.lightbox-item{
+    min-height: 80vh;
+    border-radius: 0.3rem;
+    background: url('../img/cake-1.jpeg');
+}
+
+.lightbox-close{
+    color: #ff0000;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.lightbox-control{
+    position: absolute;
+    font-size: 4rem;
+    color: blueviolet;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.lightbox-control:hover{
+    color: blue;
+}
+.btnLeft{
+    top:50%;
+    left:0;
+    transform: translateX(-60%);
+}
+.btnRight{
+    top:50%;
+    right: 0;
+    transform: translateX(60%);
+}
